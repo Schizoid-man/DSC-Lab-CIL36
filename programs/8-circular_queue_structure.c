@@ -44,7 +44,7 @@ int main()
 }
 void insert(int value)
 {
-	if((front == 0 && rear == MAX-1) || (rear+1 == front))
+	if((front == 0 && rear == MAX-1) || ((rear+1)%MAX == front))
 	{
 		printf("Circular Q is full!\n");
 		return;
